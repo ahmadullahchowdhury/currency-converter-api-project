@@ -345,9 +345,9 @@ const storage = {
         localStorage.setItem('currency_value',JSON.stringify(this.currencyValue))
     },
     getLocalData(){
-        const from = localStorage.getItem('from_currency' ) || 'USD'
+        const from = localStorage.getItem('from_currency' ) || 'AED'
         const to = localStorage.getItem('to_currency') || 'BDT'
-        const currencyValue = JSON.parse(localStorage.getItem('currency_value')) || 1
+        const currencyValue = JSON.parse(localStorage.getItem('currency_value')) || 10
         return {from,to, currencyValue}
     }
 }
